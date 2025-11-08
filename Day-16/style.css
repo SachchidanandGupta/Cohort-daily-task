@@ -1,0 +1,95 @@
+@font-face {
+    font-family: font;
+    src: url(./FortalesiaPlain_PERSONAL_USE_ONLY.otf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+ background-image: linear-gradient(burlywood,white,bisque);
+ padding: 20px;
+}
+#main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.info{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: font;
+}
+.info h1{
+    font-size: 50px;
+    font-weight: 900;
+    color: whitesmoke;
+}
+.info p{
+    font-size: 22px;
+    text-align: center;
+    
+    ;
+}
+#cardContainer{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.card {
+  height: 250px;
+  width: 350px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+.card img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.bottom {
+  position: absolute;
+  height: 30%;
+  width: 100%;
+  bottom: -40%;
+  border-radius: 10px;
+  background-image: linear-gradient(transparent, rgb(101, 98, 98));
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: font;
+  padding: 15px;
+}
+.card:hover .bottom{
+      bottom: 0;
+      transition: all ease 0.3s;
+}
+.card:hover{
+    box-shadow: 0 0 15px 5px burlywood;
+    transition: all ease 0.3s;
+
+}
+.bottom h2{
+    font-size: 38px;
+    font-weight: 900;
+    color: burlywood;
+}
+#icons i{
+  padding: 5px;
+  border-radius: 50px;
+  background-color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
