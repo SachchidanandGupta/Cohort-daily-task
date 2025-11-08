@@ -1,0 +1,79 @@
+@font-face {
+    font-family: fort;
+    src: url(./FortalesiaPlain_PERSONAL_USE_ONLY.otf);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+height: 100%;
+width: 100%;
+}
+#main{
+    background-color: rgb(166, 243, 255);
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow: auto;
+}
+#card{
+    height: 220px;
+    width: 220px;
+    background-color:white;
+    box-shadow: 20px 20px 40px rgb(102, 101, 101);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+    gap: 10px;
+}
+#card img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: top ;
+    border: 2px solid burlywood ;
+}
+button{
+    padding: 10px 28px;
+    border-radius: 50px;
+    border: 3px solid white;
+    background-color: bisque;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+}
+button:hover{
+    background-color: white;
+    color: bisque;
+    border: 3px solid ;
+}
+#container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5px;
+    border: 2px dashed burlywood;
+    border-radius: 10px;
+}
+#container p {
+     text-align: center;
+     font-family: fort;
+}
+#container h3{
+    font-size: 58px;
+    font-weight: bold;
+    font-family: fort;
+}
