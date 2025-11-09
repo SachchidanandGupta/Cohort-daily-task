@@ -3,40 +3,65 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body {
+
+body,
+html {
   height: 100%;
-  width: 100%;
+  background-color: black;
 }
+
 main {
   height: 100%;
   width: 100%;
-  background-color: black;
+  padding: 10px;
   display: grid;
-  grid-gap: 10px;
-  grid-template-rows: 70px 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas: "header header header"
-                       "section section section"
-                       "div1 div2 div3 ";
+  gap: 20px;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas: "left-portion right-top right-top right-top " "left-portion bottom-left bottom-center bottom-right";
 }
-header {
-  background-color: aqua;
-  grid-area: header;
+
+#left-portion {
+  background-image: url("https://i.pinimg.com/736x/cc/b7/ff/ccb7ffce18e7b105b6f99a28b50a339f.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-area: left-portion;
+  overflow: hidden;
+  border-radius: 12px;
 }
-section {
-  background-color: crimson;
-  grid-area: section;
+
+#right-top {
+  background-image: url("https://i.pinimg.com/736x/37/a7/11/37a7110d1e75524520f3ac9a3bdd4c98.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-area: right-top;
+  overflow: hidden;
+  border-radius: 12px;
 }
-#div1 {
-  background-color: purple;
-  grid-area:div1
+
+#bottom-right {
+  background-image: url("https://i.pinimg.com/736x/89/60/56/896056ec3e9dbe88f0a1fdf9f0fdfc17.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-area: bottom-right;
+  overflow: hidden;
+  border-radius: 12px;
 }
-#div2 {
-  background-color: purple;
-  grid-area:div2
+
+#bottom-center {
+  background-image: url("https://i.pinimg.com/1200x/ff/ba/cb/ffbacb09eb75eabb66b90e2dff37676d.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-area: bottom-center;
+  overflow: hidden;
+  border-radius: 12px;
 }
-#div3 {
-  background-color: purple;
-  grid-area:div3
-}
+
+#bottom-left {
+  background-image: url("https://i.pinimg.com/736x/fa/78/dd/fa78ddb22728f7ae661b3c18615d1d68.jpg");
+  background-size: cover;
+  background-position: center;
+  grid-area: bottom-left;
+  overflow: hidden;
+  border-radius: 12px;
+} /*# sourceMappingURL=style.css.map */

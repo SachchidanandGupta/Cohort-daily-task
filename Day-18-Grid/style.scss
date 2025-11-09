@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  height: 100%;
+  background-color: black;
+}
+@mixin gridCompo($location, $areaName) {
+  background-image: url($location);
+  background-size: cover;
+  background-position: center;
+  grid-area: $areaName;
+  overflow: hidden;
+  border-radius: 12px;
+}
+main {
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  gap: 20px;
+
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  grid-template-rows: 2fr 1fr;
+  grid-template-areas:
+    "left-portion right-top right-top right-top "
+    "left-portion bottom-left bottom-center bottom-right";
+}
+#left-portion {
+  @include gridCompo(
+    "https://i.pinimg.com/736x/cc/b7/ff/ccb7ffce18e7b105b6f99a28b50a339f.jpg",
+    left-portion
+  );
+}
+#right-top {
+  @include gridCompo(
+    "https://i.pinimg.com/736x/37/a7/11/37a7110d1e75524520f3ac9a3bdd4c98.jpg",
+    right-top
+  );
+}
+#bottom-right {
+  @include gridCompo(
+    "https://i.pinimg.com/736x/89/60/56/896056ec3e9dbe88f0a1fdf9f0fdfc17.jpg",
+    bottom-right
+  );
+}
+#bottom-center {
+  @include gridCompo(
+    "https://i.pinimg.com/1200x/ff/ba/cb/ffbacb09eb75eabb66b90e2dff37676d.jpg",
+    bottom-center
+  );
+}
+#bottom-left {
+  @include gridCompo(
+    "https://i.pinimg.com/736x/fa/78/dd/fa78ddb22728f7ae661b3c18615d1d68.jpg",
+    bottom-left
+  );
+}
