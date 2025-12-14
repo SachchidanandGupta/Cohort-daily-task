@@ -105,14 +105,12 @@ let iplTeams = [
 var box  = document.querySelector("#box")
 var main = document.querySelector("main")
  btn.addEventListener("click", function(){
-    var num = Math.floor( Math.random()*iplTeams.length);
-    h1.innerHTML = iplTeams[num].shortName;
-    h2.innerHTML = iplTeams[num].fullName;
-    cap.innerHTML = iplTeams[num].captain;
-    p.innerHTML = `Number of trophies : ${iplTeams[num].trophies}`;
-    box.style.backgroundColor = iplTeams[num].primary;
-  main.style.backgroundColor = iplTeams[num].secondary;
-  
-
+    var num = iplTeams[Math.floor( Math.random()*iplTeams.length)];
+    h1.innerHTML = num.shortName;
+    h2.innerHTML = num.fullName;
+    cap.innerHTML = num.captain;
+    p.innerHTML = `Number of trophies : ${num.trophies}`;
+    box.style.backgroundColor = num.primary;
+  main.style.backgroundColor = num.secondary;
  })
 
