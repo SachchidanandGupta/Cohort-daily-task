@@ -1,0 +1,107 @@
+@font-face {
+  font-family: fort;
+  src: url(./FortalesiaPlain_PERSONAL_USE_ONLY.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+main {
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#piano {
+  width: 1100px;
+  background-color: antiquewhite;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+}
+
+h1 {
+  text-align: center;
+  font-family: fort;
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#keys {
+  position: relative;
+  display: flex;
+  height: 280px;
+}
+
+.whiteKey {
+  flex: 1;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 0 0 12px 12px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.whiteKey:hover {
+  background-color: #eee;
+}
+.whiteKey:active{
+    transform: scaleY(0.975);
+}
+.blackKey {
+  position: absolute;
+  width: 42px;
+  height: 170px;
+  background-color: black;
+  color: white;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 10px;
+  font-size: 14px;
+  border-radius: 0 0 6px 6px;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.blackKey:hover {
+  background-color: #222;
+}
+.blackKey:active{
+    transform: scale(0.975);
+}
+
+
+.b1  { left: 45px; }
+.b2  { left: 110px; }
+.b3  { left: 180px; }
+.b4  { left: 245px; }
+.b5  { left: 310px; }
+.b6  { left: 375px; }
+.b7  { left: 445px; }
+.b8  { left: 510px; }
+.b9  { left: 575px; }
+.b10 { left: 643px; }
+.b11 { left: 710px; }
+.b12 { left: 775px; }
+.b13 { left: 840px; }
+.b14 { left: 905px; }
+.b15 { left: 975px; }
