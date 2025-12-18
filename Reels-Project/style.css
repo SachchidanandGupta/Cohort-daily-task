@@ -64,10 +64,31 @@ section {
   color: whitesmoke;
   background: linear-gradient(transparent, black);
 }
+.mute{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position:absolute;
+  top: 10%;
+  right: 10px;
+  border-radius: 50%;
+}
+.mute i{
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  pointer-events: none;
+}
+.mute:hover{
+   background-color: rgba(255, 255, 255, 0.2);
+}
 .profile {
   display: flex;
   height: 80px;
   width: 90%;
+  gap: 10px;
   justify-content: space-between;
   align-items: center;
 }
@@ -123,26 +144,34 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 8px;
+  gap: 15px;
 }
 .engage > h3 {
   font-size: 15px;
   font-weight: 400;
 }
-.icon {
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background: transparent;
+.engage>div{
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px;
+  flex-direction: column;
+  gap: 0;
   cursor: pointer;
 }
+.engage>div>h3{
+ pointer-events: none;
+}
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 3px;
+  pointer-events: none;
+}
 .icon > i {
-  font-size: 25px;
-  margin: 10px;
+  font-size: 35px;
 }
 .icon:hover {
   background-color: rgba(255, 255, 255, 0.2);
