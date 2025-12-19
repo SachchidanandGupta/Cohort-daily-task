@@ -17,4 +17,6 @@ body{
 }
 p{
     color: greenyellow;
+    font-family: monospace;
+    font-size: 25px;
 }
