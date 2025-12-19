@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,
+body {
+height: 100%;
+width: 100%;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #121212;
+    font-family: 'Poppins', sans-serif;
+    anchor-name: --some-anchor;
+}
+.box{
+    height: 200px;
+    width: 200px;
+}
+.box:hover{
+    anchor-name: --some-anchor;
+}
+.red{
+    background-color: red;
+}
+.blue{
+    background-color: blue;
+}
+.green{
+    background-color: green;
+}
+.anchor{
+  
+    border-radius: 10px;
+    background-color: whitesmoke;
+    position: absolute;
+    position-anchor: --some-anchor;
+    left: anchor(left);
+    bottom: anchor(bottom);
+    right: anchor(right);
+    mix-blend-mode: difference;
+    pointer-events: none;
+    top: anchor(top);
+    transition: all 0.3s linear;
+}

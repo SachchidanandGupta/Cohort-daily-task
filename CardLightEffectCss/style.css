@@ -16,7 +16,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #121212;
+    background: black;
     font-family: 'Poppins', sans-serif;
 }
 @property --rotate{
@@ -36,27 +36,38 @@ body {
 .box{
     height: 500px;
     width: 400px;
-    border: 5px rgba(255, 255, 255, 0) solid;
+    border: 0px rgba(255, 255, 255, 0) solid;
     border-radius: 15px;
      padding-inline: 10px;
      padding-bottom: 10px;
-    box-shadow: 0 0 50px rgb(255, 0, 123);
+    box-shadow: none;
     background: linear-gradient(black) padding-box, conic-gradient(from var(--rotate), black,black,black , rgb(255, 0, 123),black) border-box;
     animation:borderAnimate 3s  ;
     animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    transition: all 0.3s linear;
+    color: white;
+    text-shadow: 0 0 0px rgb(255, 0, 123) ;
+}
+.box:hover{
+    animation-play-state: running;
+    border-width: 5px;
+        box-shadow: 0 0 50px rgb(255, 0, 123);
+   color: rgb(210, 15, 60);
+   text-shadow: 0 0 20px rgb(255, 0, 123) ;
+    
 }
 .box img{
    width: 100%;
    object-fit: contain;
   
 }
-.info{
-    color: white;
-    
-}
+
+
 .info h2{
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 25px;
+    /* font-weight: 500; */
 }
 .info p{
     font-size: 15px;
